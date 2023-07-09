@@ -3,7 +3,7 @@
   }
   
   .cbody{
-    background-image: url("/home/shoebm891/stay/src/assests/header.png");
+    background-image: url("../assests/header.png");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
