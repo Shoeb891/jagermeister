@@ -63,7 +63,7 @@ nav {
   transition: 0.5s;
 }
 
-.nav__logo:active {
+.nav__logo.active {
   transform: scale(0.9);
 }
 

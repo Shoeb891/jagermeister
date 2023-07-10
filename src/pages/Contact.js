@@ -11,20 +11,20 @@ const Contact = () => {
       <div className="cbody">
       <div className="container">
         <h1 className="brand">
-          <span>A Creations</span> Farm Stay
+          <span>A Creations Farm Stay</span> 
         </h1>
         <div className="wrapper animated bounceInLeft">
           <div className="company-info">
-            <h3>Universal Farms</h3>
+            <h3>A Creations Farm Stay</h3>
             <ul>
               <li>
-                <FaRoad /> Hyderabad, Telangana
+                <FaRoad /> : 6-29/121/P, Narkhuda, Shamsabad, Hyderabad, Telangana 501218
               </li>
               <li>
-                <FaPhone /> (+91) 955xxxxxxx
+                <FaPhone /> : 9393031001 / 9390058561
               </li>
               <li>
-                <FaEnvelope /> info@universalfarms.in
+                <FaEnvelope /> : anupkumarheda@gmail.com
               </li>
             </ul>
           </div>
