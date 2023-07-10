@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav>
       <Link to="/home" className="motion--title">
         <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-          <div class="nav__logo">Universal Farms</div>
+          <div class="nav__logo">A Creations Farm Stay</div>
         </motion.div>
       </Link>
       <ul class="nav__links">

@@ -6,6 +6,17 @@ const Footer = () => {
     <footer class="footer">
       <div class="section__container footer__container">
         <div class="footer__col">
+          <h3>A Creations Farm Stay</h3>
+          <p>
+            Experience the blissful serenity of a farm staycation at Uni Farms.
+            Book your unforgettable getaway today.
+          </p>
+          <p>
+            Enjoy nature's beauty, relax in serene accommodations, and make
+            cherished memories.
+          </p>
+        </div>
+        <div class="footer__col">
           <h4>Company</h4>
           <Link to="/about">
             <p>About Us</p>
@@ -37,7 +48,7 @@ const Footer = () => {
         </div>
       </div>
       <div class="footer__bar">
-        Copyright © 2023 Universal Farms. All rights reserved.
+        Copyright © 2023 A Creations Farm Stay. All rights reserved.
       </div>
     </footer>
   );
