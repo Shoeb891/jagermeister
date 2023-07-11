@@ -1,0 +1,23 @@
+.about--container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.about--description {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.about--description:last-child {
+  margin-bottom: 0;
+}

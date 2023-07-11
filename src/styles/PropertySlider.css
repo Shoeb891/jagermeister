@@ -1,11 +1,11 @@
 .example-container {
-  width: 100%;
+  max-width: 1200px;
   height: calc(100vh - 64px);
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px 0;
+  margin: 10px auto;
 }
 
 .next,
