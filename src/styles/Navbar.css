@@ -12,16 +12,14 @@ nav {
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--text-dark);
+  text-decoration: none; /* Add this line */
+  position: relative;
 }
 
 .nav__logo:hover {
   color: var(--primary-color);
   transform: scale(1.05);
   transition: 0.5s;
-}
-
-.nav__logo:active {
-  transform: scale(0.9);
 }
 
 .nav__logo::before {
