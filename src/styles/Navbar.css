@@ -12,7 +12,7 @@ nav {
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--text-dark);
-  text-decoration: none; /* Add this line */
+  text-decoration: none;
   position: relative;
 }
 
