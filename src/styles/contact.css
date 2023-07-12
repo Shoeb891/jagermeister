@@ -66,8 +66,6 @@ ul {
   border-radius: 10px;
 }
 
-
-
 /* FORM STYLES */
 .contact form {
   display: grid;
@@ -124,5 +122,39 @@ ul {
   .company-info ul,
   .brand {
     text-align: left;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  .container {
+    padding: 0.5em;
+  }
+
+  .brand h1 {
+    font-size: 1.5rem;
+  }
+
+  .wrapper {
+    padding: 0.5em;
+  }
+
+  .company-info,
+  .contact {
+    margin-bottom: 1em;
+  }
+
+  .company-info h3,
+  .company-info ul,
+  .contact h3 {
+    text-align: center;
+  }
+
+  .contact form p {
+    margin-bottom: 0.5em;
+  }
+
+  .contact form .full {
+    grid-column: 1 / 3;
   }
 }

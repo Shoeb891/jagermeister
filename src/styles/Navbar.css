@@ -85,6 +85,7 @@ nav {
 .link a:hover::before {
   transform: scaleX(1);
 }
+
 /* Desktop styles */
 @media (min-width: 768px) {
   .nav__menu-icon {

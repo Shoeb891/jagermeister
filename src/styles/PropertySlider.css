@@ -60,3 +60,34 @@ img {
   align-items: center;
   cursor: pointer;
 }
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  .example-container {
+    height: 300px;
+  }
+
+  .next,
+  .prev,
+  .refresh {
+    top: auto;
+    bottom: 10px;
+    transform: translateY(0);
+  }
+
+  .next {
+    right: 10px;
+    left: auto;
+  }
+
+  .prev {
+    right: auto;
+    left: 10px;
+    transform: scale(-1) translateY(0);
+  }
+
+  .refresh {
+    top: 10px;
+    right: 10px;
+  }
+}

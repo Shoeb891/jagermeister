@@ -23,11 +23,6 @@
   margin-bottom: 1rem;
 }
 
-.footer__col-title {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
 .footer__link {
   display: block;
   color: black;
@@ -52,4 +47,29 @@
   color: var(--text-dark);
   padding: 1rem;
   text-align: right;
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__col {
+    margin-bottom: 10px;
+  }
+
+  .footer__col-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .footer__link {
+    font-size: 0.9rem;
+  }
+
+  .footer__bar {
+    text-align: center;
+  }
 }
