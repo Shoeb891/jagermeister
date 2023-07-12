@@ -7,6 +7,15 @@ import "../styles/PropertySlider.css";
 import "../styles/Gallery.css";
 
 const Gallery = () => {
+  const interiorImages = [
+    "https://github.com/Shoeb891/jagermeister/blob/master/src/assests/IMG_8050.jpg?raw=true",
+    "https://github.com/Shoeb891/jagermeister/blob/master/src/assests/IMG_8051.jpg?raw=true",
+    "https://github.com/Shoeb891/jagermeister/blob/master/src/assests/IMG_8052.jpg?raw=true",
+    "https://github.com/Shoeb891/jagermeister/blob/master/src/assests/IMG_8053.jpg?raw=true",
+    "https://github.com/Shoeb891/jagermeister/blob/master/src/assests/IMG_8054.jpg?raw=true",
+    "https://github.com/Shoeb891/jagermeister/blob/master/src/assests/IMG_8055.jpg?raw=true",
+  ];
+
   return (
     <>
       <Navbar />
@@ -19,7 +28,7 @@ const Gallery = () => {
           farm experience we offer.
         </p>
         <div className="example-container">
-          <PropertySlider />
+          <PropertySlider images={interiorImages} />
         </div>
       </div>
       <Footer />

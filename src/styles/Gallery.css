@@ -81,6 +81,7 @@
   color: #555;
   z-index: 2;
   transition: background-color 0.3s, color 0.3s;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .next:hover,
@@ -124,6 +125,7 @@ img.active {
   cursor: pointer;
   z-index: 2;
   transition: background-color 0.3s;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .refresh:hover {
@@ -138,7 +140,8 @@ img.active {
 .prev,
 .next,
 .refresh {
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border: none;
+  outline: none;
 }
 
 @media (max-width: 992px) {
