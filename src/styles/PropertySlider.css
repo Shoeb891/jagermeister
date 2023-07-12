@@ -8,6 +8,10 @@
   margin: 10px auto;
 }
 
+.property--img {
+  object-fit: cover;
+}
+
 .next,
 .prev {
   top: calc(50% - 20px);

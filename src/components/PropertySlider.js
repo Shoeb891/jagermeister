@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { wrap } from "popmotion";
 
-import "../styles/PropertySlider.css"; // Import the custom CSS file
+import "../styles/PropertySlider.css";
 
 const variants = {
   enter: (direction) => {
@@ -33,12 +33,12 @@ const swipePower = (offset, velocity) => {
 const PropertySlider = () => {
   const [[page, direction], setPage] = useState([0, 0]);
   const images = [
-    "https://ik.imagekit.io/pu0hxo64d/uploads/gallery/interior-decor-of-farmhouse-523-146.jpg",
-    "https://images.unsplash.com/photo-1558030929-66237a030c98?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGZhcm0lMjBob3VzZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60",
-    "https://images.unsplash.com/photo-1600252016254-f3edb5f3ae95?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGZhcm0lMjBob3VzZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60",
-    "https://images.unsplash.com/photo-1582850344778-ea000b0d19ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fGZhcm0lMjBob3VzZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60",
-    "https://images.unsplash.com/photo-1434434319959-1f886517e1fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTN8fGZhcm0lMjBob3VzZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60",
-    // Add more image URLs here
+    "https://github.com/Shoeb891/jagermeister/blob/master/src/assests/IMG_8050.jpg?raw=true",
+    "https://github.com/Shoeb891/jagermeister/blob/master/src/assests/IMG_8051.jpg?raw=true",
+    "https://github.com/Shoeb891/jagermeister/blob/master/src/assests/IMG_8052.jpg?raw=true",
+    "https://github.com/Shoeb891/jagermeister/blob/master/src/assests/IMG_8053.jpg?raw=true",
+    "https://github.com/Shoeb891/jagermeister/blob/master/src/assests/IMG_8054.jpg?raw=true",
+    "https://github.com/Shoeb891/jagermeister/blob/master/src/assests/IMG_8055.jpg?raw=true",
   ];
 
   const imageIndex = wrap(0, images.length, page);
@@ -50,19 +50,20 @@ const PropertySlider = () => {
   useEffect(() => {
     const autoplay = setInterval(() => {
       paginate(1);
-    }, 3000); // Change the autoplay interval here (in milliseconds)
+    }, 3000);
 
     return () => clearInterval(autoplay);
   }, [page]);
 
   const refresh = () => {
-    setPage([page, -direction]); // Reverse the direction to create a refresh effect
+    setPage([page, -direction]);
   };
 
   return (
     <div className="example-container">
       <AnimatePresence initial={false} custom={direction}>
         <motion.img
+          className="property--img"
           key={page}
           src={images[imageIndex]}
           custom={direction}
@@ -71,8 +72,8 @@ const PropertySlider = () => {
           animate="center"
           exit="exit"
           transition={{
-            opacity: { duration: 0.5 }, // Duration of the fade transition
-            scale: { duration: 0.5 }, // Duration of the scale transition
+            opacity: { duration: 0.5 },
+            scale: { duration: 0.5 },
           }}
           drag="x"
           dragConstraints={{ left: 0, right: 0 }}
