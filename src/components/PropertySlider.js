@@ -1,24 +1,26 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { wrap } from "popmotion";
+
+import "../styles/PropertySlider.css"; // Import the custom CSS file
 
 const variants = {
   enter: (direction) => {
     return {
-      x: direction > 0 ? 1000 : -1000,
       opacity: 0,
+      scale: direction > 0 ? 0.8 : 1.2,
     };
   },
   center: {
     zIndex: 1,
-    x: 0,
     opacity: 1,
+    scale: 1,
   },
   exit: (direction) => {
     return {
       zIndex: 0,
-      x: direction < 0 ? 1000 : -1000,
       opacity: 0,
+      scale: direction < 0 ? 0.8 : 1.2,
     };
   },
 };
@@ -45,8 +47,20 @@ const PropertySlider = () => {
     setPage([page + newDirection, newDirection]);
   };
 
+  useEffect(() => {
+    const autoplay = setInterval(() => {
+      paginate(1);
+    }, 3000); // Change the autoplay interval here (in milliseconds)
+
+    return () => clearInterval(autoplay);
+  }, [page]);
+
+  const refresh = () => {
+    setPage([page, -direction]); // Reverse the direction to create a refresh effect
+  };
+
   return (
-    <>
+    <div className="example-container">
       <AnimatePresence initial={false} custom={direction}>
         <motion.img
           key={page}
@@ -57,8 +71,8 @@ const PropertySlider = () => {
           animate="center"
           exit="exit"
           transition={{
-            x: { type: "spring", stiffness: 300, damping: 30 },
-            opacity: { duration: 0.2 },
+            opacity: { duration: 0.5 }, // Duration of the fade transition
+            scale: { duration: 0.5 }, // Duration of the scale transition
           }}
           drag="x"
           dragConstraints={{ left: 0, right: 0 }}
@@ -75,12 +89,24 @@ const PropertySlider = () => {
         />
       </AnimatePresence>
       <div className="next" onClick={() => paginate(1)}>
-        {"‣"}
+        ›
       </div>
       <div className="prev" onClick={() => paginate(-1)}>
-        {"‣"}
+        ‹
       </div>
-    </>
+      <div className="refresh" onClick={refresh}>
+        ⟳
+      </div>
+      <div className="dots">
+        {images.map((_, index) => (
+          <div
+            key={index}
+            className={`dot ${index === imageIndex ? "active" : ""}`}
+            onClick={() => setPage([index, index > page ? 1 : -1])}
+          />
+        ))}
+      </div>
+    </div>
   );
 };
 

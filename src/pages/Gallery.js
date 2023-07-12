@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import PropertySlider from "../components/PropertySlider";
+
 import "../styles/PropertySlider.css";
 import "../styles/Gallery.css";
 

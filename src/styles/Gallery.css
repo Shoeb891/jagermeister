@@ -15,7 +15,7 @@
   background-color: #f9f9f9;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(14, 14, 14, 0.1);
   perspective: 1000px;
 }
 
@@ -32,7 +32,7 @@
     rgba(255, 255, 255, 0.05) 40%,
     rgba(255, 255, 255, 0) 70%
   );
-  transform: rotate(2deg);
+  transform: rotate(6deg);
   pointer-events: none;
   z-index: -1;
 }
