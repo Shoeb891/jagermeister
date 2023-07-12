@@ -124,7 +124,7 @@ nav {
   }
 
   .nav__menu-icon.open .nav__icon-line:first-child {
-    transform: translateY(6px) rotate(45deg);
+    transform: translateY(9px) rotate(45deg);
     transition: 0.5s;
   }
 
@@ -133,7 +133,7 @@ nav {
   }
 
   .nav__menu-icon.open .nav__icon-line:last-child {
-    transform: translateY(-6px) rotate(-45deg);
+    transform: translateY(-9px) rotate(-45deg);
     transition: 0.5s;
   }
 

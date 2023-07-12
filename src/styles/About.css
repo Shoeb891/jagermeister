@@ -39,3 +39,9 @@
     margin-bottom: 1rem;
   }
 }
+
+@media (max-width: 601px) {
+  .about--container {
+    margin-top: -2rem;
+  }
+}
