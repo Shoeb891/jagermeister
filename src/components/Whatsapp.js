@@ -10,7 +10,7 @@ const Whatsapp = () => {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="2489"
-        height="2500"
+        height="50"
         viewBox="0 0 1219.547 1225.016"
         id="whatsapp"
       >
