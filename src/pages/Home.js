@@ -191,10 +191,22 @@ const Home = () => {
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
+          <h3 className="directions">
+            <a
+              href="https://maps.google.com/maps/dir//A+Creations+Farm+Stay+6-29%2F121%2FP,+Narkhuda,+Shamsabad+Hyderabad,+Telangana+501218/@17.2622117,78.3254986,15z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3bcbbf271a7aa60b:0x1fee920eb7355b98"
+              target="_blank"
+              rel="noreferrer"
+              className="directions--a"
+            >
+              Get Directions
+            </a>
+          </h3>
         </div>
       </div>
       <div className="gallery--container">
-        <h3 className="gallery--title underlined-heading">Explore Our Gallery</h3>
+        <h3 className="gallery--title underlined-heading">
+          Explore Our Gallery
+        </h3>
         <p className="gallery--description">
           Immerse yourself in the captivating beauty of our farm stay through
           our carefully curated photo gallery. Each image captures the essence

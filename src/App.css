@@ -471,3 +471,29 @@ ol {
   text-decoration: underline;
   text-decoration-color: black;
 }
+
+.directions {
+  width: 150px;
+  padding: 4px 6px;
+  font: bold;
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+  border-radius: 6px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.directions:hover {
+  color: var(--primary-color);
+  background-color: #92bde7;
+  transition: 0.3s ease-in-out;
+}
+
+.directions--a.active {
+  color: var(--primary-color-dark);
+}
+
+.directions--a {
+  text-decoration: none;
+}
