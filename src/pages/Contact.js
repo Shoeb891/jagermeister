@@ -10,12 +10,12 @@ const Contact = () => {
       <Navbar />
       <div className="cbody">
         <div className="container">
-          <h1 className="brand">
+          <h1 className="brand" class="underlined-heading">
             <span></span>Contact Us
           </h1>
           <div className="wrapper animated bounceInLeft">
             <div className="company-info">
-              <h3 className="company-info-title">A Creations Farm Stay</h3>
+              <h3 className="company-info-title underlined-heading">A Creations Farm Stay</h3>
               <ul>
                 <li>
                   <FaRoad /> : 6-29/121/P, Narkhuda, Shamsabad, Hyderabad,
