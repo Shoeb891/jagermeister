@@ -381,6 +381,10 @@ body {
   }
 }
 
+.amenities-list li {
+  margin-bottom: 10px; /* Adjust the value to add desired space between each line */
+}
+
 @media (max-width: 900px) {
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
@@ -407,4 +411,46 @@ body {
   .about--container {
     margin-top: -2rem;
   }
+}
+
+.container--- {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  padding-top: 80px;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 15px;
+  margin-top: 25px;
+  font-size: 18px;
+}
+
+ol {
+  line-height: 1.5;
+  margin-bottom: 15px;
+  margin-top: 25px;
+  font-size: 18px;
+}
+
+.contact---info {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.contact---info p {
+  margin: 5px 0;
+}
+.amenities-list li {
+  margin-bottom: 12px; /* Adjust the value to add desired space between each item */
 }
