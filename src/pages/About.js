@@ -2,11 +2,13 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "../styles/About.css";
+import Whatsapp from "../components/Whatsapp";
 
 const About = () => {
   return (
     <>
       <Navbar />
+      <Whatsapp />
       <div class="container---">
         <h1>A Creations Farm Stay</h1>
 

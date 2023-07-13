@@ -5,6 +5,7 @@ import PropertySlider from "../components/PropertySlider";
 
 import "../styles/PropertySlider.css";
 import "../styles/Gallery.css";
+import Whatsapp from "../components/Whatsapp";
 
 const Gallery = () => {
   const interiorImages = [
@@ -60,6 +61,7 @@ const Gallery = () => {
   return (
     <>
       <Navbar />
+      <Whatsapp />
       <div className="gallery--container">
         <h3 className="gallery--title">Explore Our Gallery</h3>
         <p className="gallery--description">

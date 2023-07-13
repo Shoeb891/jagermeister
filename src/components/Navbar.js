@@ -67,6 +67,17 @@ const Navbar = () => {
           whileTap={{ scale: 0.7 }}
         >
           <li className="link">
+            <CustomLink to="/testimonials">Testimonials</CustomLink>
+          </li>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.7 }}
+        >
+          <li className="link">
             <CustomLink to="/contact">Contact Us</CustomLink>
           </li>
         </motion.div>

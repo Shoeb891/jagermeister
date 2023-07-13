@@ -45,3 +45,14 @@
     margin-top: -2rem;
   }
 }
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px; /* Adjust this value to change the vertical position */
+  right: 20px; /* Adjust this value to change the horizontal position */
+  z-index: 9999; /* Ensure it appears above other elements */
+}
+
+.whatsapp-icon img {
+  width: 60px; /* Adjust this value to change the size of the icon */
+}

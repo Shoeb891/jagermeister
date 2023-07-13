@@ -3,11 +3,13 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { FaRoad, FaPhone, FaEnvelope } from "react-icons/fa";
+import Whatsapp from "../components/Whatsapp";
 
 const Contact = () => {
   return (
     <>
       <Navbar />
+      <Whatsapp />
       <div className="cbody">
         <div className="container">
           <h1 className="brand">

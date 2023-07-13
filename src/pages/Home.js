@@ -8,6 +8,7 @@ import PropertySlider from "../components/PropertySlider";
 import "../styles/About.css";
 import "../styles/PropertySlider.css";
 import "../styles/Gallery.css";
+import Whatsapp from "../components/Whatsapp";
 
 const Home = () => {
   const interiorImages = [
@@ -22,6 +23,7 @@ const Home = () => {
     <>
       <Navbar />
       <Hero />
+      <Whatsapp />
       <div class="container---">
         <h1>A Creations Farm Stay</h1>
 
