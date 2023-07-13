@@ -3,14 +3,13 @@
 }
 
 .cbody {
-  background-image: url("../assests/image (1).png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   color: black;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   line-height: 1.6;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Poppins", sans-serif;
   padding: 1em;
 }
 
@@ -24,6 +23,10 @@
 ul {
   list-style: none;
   padding: 0;
+}
+
+.company-info li {
+  margin-bottom: 20px;
 }
 
 .brand {
@@ -47,10 +50,11 @@ ul {
 }
 
 .company-info {
-  background-color: rgb(222, 234, 251, 0.5);
+  /* background-color: rgb(222, 234, 251, 0.5); */
+  background-color: rgb(247, 218, 222);
   box-shadow: 0 4px 10px 0 #9e9ea7;
   border: 1px solid #ffffff;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 .company-info h3,
@@ -60,10 +64,11 @@ ul {
 }
 
 .contact {
-  background-color: rgb(222, 234, 251, 0.5);
+  /* background-color: rgb(222, 234, 251, 0.5); */
+  background-color: none;
   box-shadow: 0 4px 10px 0 #9e9ea7;
   border: 1px solid #ffffff;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 /* FORM STYLES */
@@ -159,13 +164,14 @@ ul {
   }
 }
 
-.whatsapp-icon {
-  position: fixed;
-  bottom: 20px; /* Adjust this value to change the vertical position */
-  right: 20px; /* Adjust this value to change the horizontal position */
-  z-index: 9999; /* Ensure it appears above other elements */
+.image-container {
+  text-align: center;
+  margin-top: 20px;
 }
 
-.whatsapp-icon img {
-  width: 60px; /* Adjust this value to change the size of the icon */
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }

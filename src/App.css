@@ -189,6 +189,7 @@ body {
 }
 
 .title {
+  text-align: center;
   font-size: 2rem;
   font-weight: bold;
   color: #333;
@@ -226,6 +227,7 @@ body {
 }
 
 .gallery--title {
+  text-align: center;
   font-size: 2rem;
   font-weight: bold;
   color: #333;
@@ -240,14 +242,14 @@ body {
 
 /* Contact Page */
 .cbody {
-  background-image: url("./assests/image (1).png");
+  /* background-image: url("./assests/image (1).png"); */
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   color: black;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   line-height: 1.6;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Poppins", sans-serif;
   padding: 1em;
 }
 
@@ -423,8 +425,8 @@ body {
 h1 {
   text-align: center;
   font-size: 28px;
-  margin-top: 25px;
-  margin-bottom: 30px;
+  /* margin-top: 10px; */
+  margin-bottom: 40px;
   padding-top: 80px;
 }
 
@@ -454,13 +456,18 @@ ol {
   margin-bottom: 12px; /* Adjust the value to add desired space between each item */
 }
 
-.whatsapp-icon {
-  position: fixed;
-  bottom: 20px; /* Adjust this value to change the vertical position */
-  right: 20px; /* Adjust this value to change the horizontal position */
-  z-index: 9999; /* Ensure it appears above other elements */
+.header__content h1 {
+  text-align: left;
 }
 
-.whatsapp-icon img {
-  width: 60px; /* Adjust this value to change the size of the icon */
+.amenities-list {
+  list-style-type: disc;
+}
+
+.amenities-list {
+  color: #2c3855;
+}
+.underlined-heading {
+  text-decoration: underline;
+  text-decoration-color: black;
 }

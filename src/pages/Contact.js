@@ -12,12 +12,12 @@ const Contact = () => {
       <Whatsapp />
       <div className="cbody">
         <div className="container">
-          <h1 className="brand">
-            <span>A Creations Farm Stay</span>
+          <h1 className="brand" class="underlined-heading">
+            <span></span>Contact Us
           </h1>
           <div className="wrapper animated bounceInLeft">
             <div className="company-info">
-              <h3>A Creations Farm Stay</h3>
+              <h3 className="company-info-title underlined-heading">A Creations Farm Stay</h3>
               <ul>
                 <li>
                   <FaRoad /> : 6-29/121/P, Narkhuda, Shamsabad, Hyderabad,
@@ -32,7 +32,6 @@ const Contact = () => {
               </ul>
             </div>
             <div className="contact">
-              <h3>Contact Us</h3>
               <form>
                 <p>
                   <label>Name</label>
@@ -57,6 +56,8 @@ const Contact = () => {
             </div>
           </div>
         </div>
+  
+
       </div>
       <Footer />
     </>
