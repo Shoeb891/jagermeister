@@ -68,19 +68,54 @@ const Gallery = () => {
           of our serene surroundings, charming accommodations, and the authentic
           farm experience we offer.
         </p>
-        <div className="example-container">
+        <div className="container--text">
+          <h3 className="container--title">Interior</h3>
+          <p className="container--description">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit diam
+            fringilla, taciti metus aenean nostra nisi tellus hac placerat.
+          </p>
+        </div>
+        <div className="interiorImages-container">
           <PropertySlider images={interiorImages} />
         </div>
-        <div className="example-container">
+        <div className="container--text">
+          <h3 className="container--title">Bar Counter</h3>
+          <p className="container--description">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit diam
+            fringilla, taciti metus aenean nostra nisi tellus hac placerat.
+          </p>
+        </div>
+        <div className="barCounterImages-container">
           <PropertySlider images={barCounterImages} />
         </div>
-        <div className="example-container">
-          <PropertySlider images={lawnImages} />
+        <div className="container--text">
+          <h3 className="container--title">Kitchen</h3>
+          <p className="container--description">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit diam
+            fringilla, taciti metus aenean nostra nisi tellus hac placerat.
+          </p>
         </div>
-        <div className="example-container">
+        <div className="kitchenImages-container">
           <PropertySlider images={kitchenImages} />
         </div>
-        <div className="example-container">
+        <div className="container--text">
+          <h3 className="container--title">Lawn</h3>
+          <p className="container--description">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit diam
+            fringilla, taciti metus aenean nostra nisi tellus hac placerat.
+          </p>
+        </div>
+        <div className="lawnImages-container">
+          <PropertySlider images={lawnImages} />
+        </div>
+        <div className="container--text">
+          <h3 className="container--title">Pool</h3>
+          <p className="container--description">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit diam
+            fringilla, taciti metus aenean nostra nisi tellus hac placerat.
+          </p>
+        </div>
+        <div className="poolImages-container">
           <PropertySlider images={poolImages} />
         </div>
       </div>
