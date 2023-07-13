@@ -455,3 +455,19 @@ ol {
 .amenities-list li {
   margin-bottom: 12px; /* Adjust the value to add desired space between each item */
 }
+
+.header__content h1{
+  text-align: left;
+}
+
+.amenities-list {
+  list-style-type: disc; 
+}
+
+.amenities-list  {
+  color: #2c3855; 
+}
+.underlined-heading {
+  text-decoration: underline;
+  text-decoration-color: black; 
+}

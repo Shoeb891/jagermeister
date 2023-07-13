@@ -8,7 +8,7 @@ const About = () => {
     <>
       <Navbar />
       <div class="container---">
-        <h1>A Creations Farm Stay</h1>
+        <h1 className="underlined-heading">A Creations Farm Stay</h1>
 
         <p>
           Welcome to A Creations Farm Stay! Escape the hustle and bustle of city
@@ -70,13 +70,13 @@ const About = () => {
           </a>
           .
         </p>
-        <h1>AMENITIES</h1>
+        <h1 className="underlined-heading">AMENITIES</h1>
         <p>
           We take pride in offering a wide range of amenities to make your
           experience enjoyable and memorable. Here is a list of amenities
           available:
         </p>
-        <ol class="amenities-list">
+        <ul class="amenities-list">
           <li>
             Swimming Pool: Take a refreshing dip in our sparkling swimming pool.
             Enjoy a relaxing swim or engage in water games to make the most of
@@ -130,12 +130,12 @@ const About = () => {
             uninterrupted electricity supply, allowing you to enjoy your stay
             without any disruptions.
           </li>
-        </ol>
+        </ul>
 
         <div class="contact---info">
           <p>For bookings and further inquiries, please contact us at:</p>
           <p>Phone: 9393031001, 9390058561</p>
-          <h1>LOCATION</h1>
+          <h1 className="underlined-heading">LOCATION</h1>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7620.205964181371!2d78.325506!3d17.262252!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbbf271a7aa60b%3A0x1fee920eb7355b98!2sA%20Creations%20Farm%20Stay!5e0!3m2!1sen!2sin!4v1689205088239!5m2!1sen!2sin"
             width="100%"
