@@ -1,0 +1,47 @@
+
+.client {
+    background-color: var(--extra-light);
+  }
+  
+  .client__grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .client__card {
+    padding: 2rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .client__card img {
+    max-width: 80px;
+    margin: auto;
+    margin-bottom: 1rem;
+    border-radius: 100%;
+  }
+  
+  .client__card p {
+    text-align: center;
+    color: var(--text-dark);
+  }
+
+  @media (width < 900px) {
+    
+  
+    .client__grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+  }
+  
+  @media (width < 600px) {   
+    .client__grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+  }

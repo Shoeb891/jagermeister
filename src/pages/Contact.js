@@ -12,7 +12,7 @@ const Contact = () => {
       <Whatsapp />
       <div className="cbody">
         <div className="container">
-          <h1 className="brand" class="underlined-heading">
+          <h1 class="underlined-heading">
             <span></span>Contact Us
           </h1>
           <div className="wrapper animated bounceInLeft">

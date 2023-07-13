@@ -17,18 +17,16 @@ const Footer = () => {
           <Link to="/contact" className="footer__link">
             Contact Us
           </Link>
-          <Link to="/social" className="footer__link">
-            Social Media
-          </Link>
+          
         </div>
 
         <div className="footer__col">
-          <h4 className="footer__col-title">Resources</h4>
-          <Link to="/help" className="footer__link">
-            Help Center
+          <h4 className="footer__col-title">Social Media</h4>
+          <Link to="/whatsapp" className="footer__link">
+            Whatsapp
           </Link>
-          <Link to="/partnerships" className="footer__link">
-            Partnerships
+          <Link to="/instagram" className="footer__link">
+            Instagram
           </Link>
         </div>
 
