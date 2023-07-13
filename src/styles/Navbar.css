@@ -1,11 +1,35 @@
 nav {
-  max-width: var(--max-width);
+  position: fixed;
   margin: auto;
   padding: 2rem 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
+  top: 0;
+  height: 30px;
+  z-index: 1;
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  margin: auto;
+  padding: 2rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  height: 30px;
+  z-index: 1;
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+
+.nav__black {
+  background-color: #000000;
+  color: white;
 }
 
 .nav__logo {

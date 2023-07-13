@@ -5,13 +5,27 @@ import "../styles/Navbar.css";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [show, handleShow] = React.useState(false);
+
+  const transitionNavbar = () => {
+    if (window.scrollY > 100) {
+      handleShow(true);
+    } else {
+      handleShow(false);
+    }
+  };
+
+  React.useEffect(() => {
+    window.addEventListener("scroll", transitionNavbar);
+    return () => window.removeEventListener("scroll", transitionNavbar);
+  }, []);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <nav>
+    <nav className={`nav ${show && "nav__black"}`}>
       <Link to="/home" className="motion--title">
         <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
           <div class="nav__logo">A Creations Farm Stay</div>
