@@ -60,7 +60,6 @@ const Home = () => {
       <p>For bookings and further inquiries, please contact us at:</p>
       <p>Phone: 9393031001, 9390058561</p>
       <h1>LOCATION</h1>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7620.205964181371!2d78.325506!3d17.262252!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbbf271a7aa60b%3A0x1fee920eb7355b98!2sA%20Creations%20Farm%20Stay!5e0!3m2!1sen!2sin!4v1689205088239!5m2!1sen!2sin" width="800" height="600" style={{border: "0"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
       <div className="gallery--container">
@@ -78,26 +77,25 @@ const Home = () => {
       <div className="cbody">
         <div className="container">
           <h1 className="brand">
-            <span>A Creations</span> Farm Stay
+            Contact Us
           </h1>
           <div className="wrapper animated bounceInLeft">
             <div className="company-info">
-              <h3>Universal Farms</h3>
+              <h3>A Creations Farm Stay</h3>
               <ul>
                 <li>
-                  <FaRoad /> 6-29/121/P, Narkhuda, Shamsabad, Hyderabad,
+                  <FaRoad /> : 6-29/121/P, Narkhuda, Shamsabad, Hyderabad,
                   Telangana 501218
                 </li>
                 <li>
-                  <FaPhone /> 9393031001 / 9390058561
+                  <FaPhone /> : 9393031001 / 9390058561
                 </li>
                 <li>
-                  <FaEnvelope /> anupkumarheda@gmail.com
+                  <FaEnvelope /> : anupkumarheda@gmail.com
                 </li>
               </ul>
             </div>
             <div className="contact">
-              <h3>Contact Us</h3>
               <form>
                 <p>
                   <label>Name</label>
