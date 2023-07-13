@@ -11,12 +11,12 @@ import "../styles/Gallery.css";
 
 const Home = () => {
   const interiorImages = [
-    "https://github.com/Shoeb891/jagermeister/blob/master/src/assests/IMG_8050.jpg?raw=true",
-    "https://github.com/Shoeb891/jagermeister/blob/master/src/assests/IMG_8051.jpg?raw=true",
-    "https://github.com/Shoeb891/jagermeister/blob/master/src/assests/IMG_8052.jpg?raw=true",
-    "https://github.com/Shoeb891/jagermeister/blob/master/src/assests/IMG_8053.jpg?raw=true",
-    "https://github.com/Shoeb891/jagermeister/blob/master/src/assests/IMG_8054.jpg?raw=true",
-    "https://github.com/Shoeb891/jagermeister/blob/master/src/assests/IMG_8055.jpg?raw=true",
+    "https://github.com/Shoeb891/jagermeister/blob/master/src/assests/pool/IMG_8050.jpg?raw=true",
+    "https://github.com/Shoeb891/jagermeister/blob/master/src/assests/interior/IMG_8051.jpg?raw=true",
+    "https://github.com/Shoeb891/jagermeister/blob/master/src/assests/interior/IMG_8052.jpg?raw=true",
+    "https://github.com/Shoeb891/jagermeister/blob/master/src/assests/kitchen/IMG_8053.jpg?raw=true",
+    "https://github.com/Shoeb891/jagermeister/blob/master/src/assests/interior/IMG_8054.jpg?raw=true",
+    "https://github.com/Shoeb891/jagermeister/blob/master/src/assests/interior/IMG_8055.jpg?raw=true",
   ];
   return (
     <>
