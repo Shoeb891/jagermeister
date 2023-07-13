@@ -7,7 +7,7 @@ const Hero = () => {
         <div className="header__content">
           <h1>Escape, Explore, and Embrace the Joy</h1>
           <p>
-            Experience Luxury Within Reach: Affordable Staycations that Exceed
+            Experience Luxury Within Reach: Affordable Staycation that Exceed
             Expectations.
           </p>
         </div>
