@@ -77,11 +77,13 @@ const Home = () => {
       <div className="cbody">
         <div className="container">
           <h1 className="brand">
-            Contact Us
+          <h3>Contact Us</h3>
+
+            <span>A Creations</span> Farm Stay
           </h1>
           <div className="wrapper animated bounceInLeft">
             <div className="company-info">
-              <h3>A Creations Farm Stay</h3>
+              <h3><A/h3>
               <ul>
                 <li>
                   <FaRoad /> : 6-29/121/P, Narkhuda, Shamsabad, Hyderabad,

@@ -420,7 +420,6 @@ body {
   margin: 0 auto;
   padding: 20px;
   text-align: center;
-  
 }
 
 h1 {
@@ -455,16 +454,4 @@ ol {
 }
 .amenities-list li {
   margin-bottom: 12px; /* Adjust the value to add desired space between each item */
-}
-
-.header__content h1{
-  text-align: none;
-}
-
-.company-info li {
-  margin-bottom: 10px;
-}
-
-.company-info-title h1{
-  text-align: center;
 }
