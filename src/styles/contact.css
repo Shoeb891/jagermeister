@@ -3,6 +3,7 @@
 }
 
 .cbody {
+  /* background-image: url("../assests/header.png"); */
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -51,7 +52,7 @@ ul {
 
 .company-info {
   /* background-color: rgb(222, 234, 251, 0.5); */
-  background-color: rgb(247, 218, 222);
+  background-color: #d5c6e0;
   box-shadow: 0 4px 10px 0 #9e9ea7;
   border: 1px solid #ffffff;
   /* border-radius: 10px; */
@@ -64,7 +65,7 @@ ul {
 }
 
 .contact {
-  /* background-color: rgb(222, 234, 251, 0.5); */
+  background-color: #d5c6e0;
   background-color: none;
   box-shadow: 0 4px 10px 0 #9e9ea7;
   border: 1px solid #ffffff;

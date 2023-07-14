@@ -11,21 +11,27 @@ const Footer = () => {
           <Link to="/about" className="footer__link">
             About Us
           </Link>
-          <Link to="/booking" className="footer__link">
+          <Link to="/contact" className="footer__link">
             Book
           </Link>
           <Link to="/contact" className="footer__link">
             Contact Us
+          </Link>
+          <Link to="/gallery" className="footer__link">
+            Gallery
+          </Link>
+          <Link to="/testimonials" className="footer__link">
+            Testimonials
           </Link>
           
         </div>
 
         <div className="footer__col">
           <h4 className="footer__col-title">Social Media</h4>
-          <Link to="/whatsapp" className="footer__link">
+          <Link to="https://api.whatsapp.com/send?phone=9393031001" target="_blank" className="footer__link">
             Whatsapp
           </Link>
-          <Link to="/instagram" className="footer__link">
+          <Link to="https://www.instagram.com/a_creation_farm_stay/" target="_blank" className="footer__link">
             Instagram
           </Link>
         </div>

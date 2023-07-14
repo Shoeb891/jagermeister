@@ -25,7 +25,7 @@
   }
   
   .client__card p {
-    text-align: center;
+    text-align: left;
     color: var(--text-dark);
   }
 
@@ -44,4 +44,29 @@
       grid-template-columns: repeat(1, 1fr);
     }
   
+  }
+
+  .client{
+    background-color:#f3d8c7;
+  }
+
+  .user--icon {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    height: 40px;
+    width: 40px;
+    padding: 0 0 10px 0;
+
+  }
+
+  .user--info {
+    display: flex;
+    align-items: center;
+  }
+
+  .user--name {
+    padding:  0 0 0 16px;
+
   }
