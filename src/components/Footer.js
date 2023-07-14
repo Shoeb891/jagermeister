@@ -11,11 +11,17 @@ const Footer = () => {
           <Link to="/about" className="footer__link">
             About Us
           </Link>
-          <Link to="/booking" className="footer__link">
+          <Link to="/contact" className="footer__link">
             Book
           </Link>
           <Link to="/contact" className="footer__link">
             Contact Us
+          </Link>
+          <Link to="/gallery" className="footer__link">
+            Gallery
+          </Link>
+          <Link to="/testimonials" className="footer__link">
+            Testimonials
           </Link>
           
         </div>

@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Whatsapp from "../components/Whatsapp";
 import ScrollAnimation from "../components/ScrollAmination";
+import {FaUserAlt} from 'react-icons/fa'
 
 const Testimonials = () => {
   return (
@@ -18,8 +19,11 @@ const Testimonials = () => {
             </ScrollAnimation>
             <ScrollAnimation>
               <div className="client__grid">
-                <div className="client__card">
-                  <img src="../assests/download.png" alt="client" />
+              <div className="client__card">
+                  <div className="user--info">
+                  <FaUserAlt className="user--icon" />
+                  <h4 className="user--name">Mahendar Baheti</h4>
+                  </div>
                   <p>
                     What a place, what an experience. You need to visit it to
                     feel it. Have been there yesterday with cousins and it was
@@ -30,17 +34,20 @@ const Testimonials = () => {
                   </p>
                 </div>
                 <div className="client__card">
-                  <img
-                    src="../assests/download.png"
-                    alt="client"
-                  />
+                  <div className="user--info">
+                  <FaUserAlt className="user--icon" />
+                  <h4 className="user--name">Rohit Khanderao</h4>
+                  </div>
                   <p>
                     Best farmhouse within budget with all the
                     amenities......staff is friendly and helpful
                   </p>
                 </div>
                 <div className="client__card">
-                  <img src="../assests/download.png" />
+                  <div className="user--info">
+                  <FaUserAlt className="user--icon" />
+                  <h4 className="user--name">Deepesh Jobanputra</h4>
+                  </div>
                   <p>
                     A true combination of luxury and comfort. This villa is so
                     well planned that it has every amenity you can think of for
@@ -50,7 +57,10 @@ const Testimonials = () => {
                   </p>
                 </div>
                 <div className="client__card">
-                  <img src="../assests/download.png" alt="client" />
+                  <div className="user--info">
+                  <FaUserAlt className="user--icon" />
+                  <h4 className="user--name">Chavi Asawa</h4>
+                  </div>
                   <p>
                     Property and interior is just amazing and each and every
                     corner of the place has its own vibes. Definitely a perfect
@@ -58,7 +68,10 @@ const Testimonials = () => {
                   </p>
                 </div>
                 <div className="client__card">
-                  <img src="../assests/download.png" alt="client" />
+                  <div className="user--info">
+                  <FaUserAlt className="user--icon" />
+                  <h4 className="user--name">Priya sarda</h4>
+                  </div>
                   <p>
                     This is by far the most beautiful and comfortable farm stay
                     I have been to. The ambiance is beautiful and its a perfect
@@ -68,9 +81,12 @@ const Testimonials = () => {
                   </p>
                 </div>
                 <div className="client__card">
-                  <img src="../assests/download.png" alt="client" />
+                  <div className="user--info">
+                  <FaUserAlt className="user--icon" />
+                  <h4 className="user--name">Shruthi Mantri</h4>
+                  </div>
                   <p>
-                    his beautiful property had all the amenities with luxury…it
+                    This beautiful property had all the amenities with luxury…it
                     had all the comfort..pool for kids..kitchen..open
                     balcony..swing..refrigerator..a garden…had a good time with
                     siblings there..would recommend this place 👍🏻
