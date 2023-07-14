@@ -1,0 +1,15 @@
+.video-slider-container {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.video-slide {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px; /* Add spacing between slides if needed */
+}
+
+.video-slide video {
+  width: 100%;
+  height: auto;
+}
