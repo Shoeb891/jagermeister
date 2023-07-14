@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import "../styles/About.css";
 import Whatsapp from "../components/Whatsapp";
 import ScrollAnimation from "../components/ScrollAmination";
+import ReactPlayer from "react-player";
 
 const About = () => {
   return (
@@ -13,6 +14,7 @@ const About = () => {
       <ScrollAnimation>
         <ScrollAnimation>
           <div class="container---">
+            <ReactPlayer url="../assests/video1.mp4" controls={true} />
             <ScrollAnimation>
               <h1 className="underlined-heading">A Creations Farm Stay</h1>
             </ScrollAnimation>

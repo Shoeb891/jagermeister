@@ -207,7 +207,7 @@ body {
 /* PropertySlider Component */
 .example-container {
   width: 80%;
-  height: 500px;
+  height: 300px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -419,7 +419,7 @@ body {
 .container--- {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 0;
   text-align: center;
 }
 
@@ -499,6 +499,6 @@ ol {
   text-decoration: none;
 }
 
-body{
+body {
   background-color: #efe5dc;
 }

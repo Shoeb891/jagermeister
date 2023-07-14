@@ -58,10 +58,6 @@
     align-items: center;
   }
 
-  .footer__col {
-    margin-bottom: 10px;
-  }
-
   .footer__col-title {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
@@ -86,4 +82,3 @@
 .whatsapp-icon img {
   width: 60px; /* Adjust this value to change the size of the icon */
 }
-

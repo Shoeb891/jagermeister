@@ -131,6 +131,29 @@ const Home = () => {
           </p>
         </ScrollAnimation>
         <ScrollAnimation>
+          <div className="gallery--container">
+            <ScrollAnimation>
+              <h3 className="gallery--title underlined-heading">
+                Explore Our Gallery
+              </h3>
+            </ScrollAnimation>
+            <ScrollAnimation>
+              <p className="gallery--description">
+                Immerse yourself in the captivating beauty of our farm stay
+                through our carefully curated photo gallery. Each image captures
+                the essence of our serene surroundings, charming accommodations,
+                and the authentic farm experience we offer.
+              </p>
+            </ScrollAnimation>
+            <ScrollAnimation>
+              <div className="example-container">
+                <PropertySlider images={interiorImages} />
+              </div>
+            </ScrollAnimation>
+          </div>
+        </ScrollAnimation>
+
+        <ScrollAnimation>
           <h1 className="underlined-heading">AMENITIES</h1>
         </ScrollAnimation>
         <ScrollAnimation>
@@ -255,28 +278,6 @@ const Home = () => {
           </div>
         </ScrollAnimation>
       </div>
-      <ScrollAnimation>
-        <div className="gallery--container">
-          <ScrollAnimation>
-            <h3 className="gallery--title underlined-heading">
-              Explore Our Gallery
-            </h3>
-          </ScrollAnimation>
-          <ScrollAnimation>
-            <p className="gallery--description">
-              Immerse yourself in the captivating beauty of our farm stay
-              through our carefully curated photo gallery. Each image captures
-              the essence of our serene surroundings, charming accommodations,
-              and the authentic farm experience we offer.
-            </p>
-          </ScrollAnimation>
-          <ScrollAnimation>
-            <div className="example-container">
-              <PropertySlider images={interiorImages} />
-            </div>
-          </ScrollAnimation>
-        </div>
-      </ScrollAnimation>
       <ScrollAnimation>
         <div className="cbody">
           <div className="container">

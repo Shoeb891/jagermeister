@@ -42,7 +42,7 @@ const PropertySlider = ({ images }) => {
   useEffect(() => {
     const autoplay = setInterval(() => {
       paginate(1);
-    }, 3000);
+    }, 7000);
 
     return () => clearInterval(autoplay);
   }, [page]);
