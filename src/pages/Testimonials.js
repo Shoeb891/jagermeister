@@ -25,11 +25,8 @@ const Testimonials = () => {
                   <h4 className="user--name">Mahendar Baheti</h4>
                   </div>
                   <p>
-                    What a place, what an experience. You need to visit it to
-                    feel it. Have been there yesterday with cousins and it was
-                    awesome. Nice swimming pool, Lawn, Bonfire place, spacious
-                    rooms, fully furnished to spend time with you near and dear
-                    ones. I would recommend this place for anyone looking to
+                    What a place, what an experience. Nice swimming pool, Lawn, Bonfire place, spacious
+                    rooms. I would recommend this place for anyone looking to
                     spend time away from busy city life..
                   </p>
                 </div>
@@ -43,6 +40,65 @@ const Testimonials = () => {
                     amenities......staff is friendly and helpful
                   </p>
                 </div>
+                <div className="client__card">
+                  <div className="user--info">
+                  <FaUserAlt className="user--icon" />
+                  <h4 className="user--name">Rohit Khanderao</h4>
+                  </div>
+                  <p>
+                  A lovely farm house for parties and events. The owner Gokul is very friendly and accommodating of some requests. It’s a newly renovated property with modern amenities, a nice swimming pool, a large bar counter, a garden space with swing and bonfire to name a few
+                  </p>
+                </div>
+                <div className="client__card">
+                  <div className="user--info">
+                  <FaUserAlt className="user--icon" />
+                  <h4 className="user--name">Anshul Augnivansh</h4>
+                  </div>
+                  <p>
+                    Best farmhouse within budget with all the
+                    amenities......staff is friendly and helpful
+                  </p>
+                </div>
+                <div className="client__card">
+                  <div className="user--info">
+                  <FaUserAlt className="user--icon" />
+                  <h4 className="user--name">kushal kasat</h4>
+                  </div>
+                  <p>
+                  When you are looking for farmstay in Hyderabad, A Creations Farm Stay is the answer. Besides the green expanse, the highlight of this exclusive farmstay near Shamshabad is the earthy accommodation. Aesthetically done interiors perfectly complement the modern exteriors . Luxury Rooms and  are also available. A huge lawn area, a well maintained swimming pool and much more... Really enjoyed the stay. ITS DEFINITELY VALUE FOR MONEY.
+                  </p>
+                </div>
+                <div className="client__card">
+                  <div className="user--info">
+                  <FaUserAlt className="user--icon" />
+                  <h4 className="user--name">Sushant Gagad</h4>
+                  </div>
+                  <p>
+                  Its a perfect place to chill out and relax with family and friends. Kids enjoyed a lot at the pool area. View is beautiful and well maintained.
+                  </p>
+                </div>
+                <div className="client__card">
+                  <div className="user--info">
+                  <FaUserAlt className="user--icon" />
+                  <h4 className="user--name">ravi teja</h4>
+                  </div>
+                  <p>
+                  Such a good place to spend the week with family and friends. Every aspect of the villa is luxurious and has been well maintained. Staff was also helpful in all areas.
+Need few things to set right up for stay apart from that we had a wonderful time during the stay.
+Recommended to all types of party's and gathering.
+                  </p>
+                </div>
+                <div className="client__card">
+                  <div className="user--info">
+                  <FaUserAlt className="user--icon" />
+                  <h4 className="user--name">KTM Kondapur</h4>
+                  </div>
+                  <p>
+                   
+Awesome ambience.. Well maintained Luxury villa type stay.. Swimming pool will blow your mind. A perfect way to spend your weekend with Family.
+                  </p>
+                </div>
+              
                 <div className="client__card">
                   <div className="user--info">
                   <FaUserAlt className="user--icon" />
