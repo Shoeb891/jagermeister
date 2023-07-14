@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useRef } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "../styles/About.css";
 import Whatsapp from "../components/Whatsapp";
 import ScrollAnimation from "../components/ScrollAmination";
 import ReactPlayer from "react-player";
+import VideoSlider from "../components/VideoSlider";
+import video1 from "../assests/video1.mp4";
+import video2 from "../assests/video2.mp4";
+import video3 from "../assests/video3.mp4";
+import video4 from "../assests/video4.mp4";
+import video5 from "../assests/video5.mp4";
 
 const About = () => {
+  const playerRef = useRef(null);
+
+  const handleClick = () => {
+    const player = playerRef.current.getInternalPlayer();
+    player.requestFullscreen();
+  };
+  const videos = [video1, video2, video3, video4, video5];
   return (
     <>
       <Navbar />
@@ -14,7 +27,9 @@ const About = () => {
       <ScrollAnimation>
         <ScrollAnimation>
           <div class="container---">
-            <ReactPlayer url="../assests/video1.mp4" controls={true} />
+            <div className="player-wrapper" onClick={handleClick}>
+              <VideoSlider videos={videos} />
+            </div>
             <ScrollAnimation>
               <h1 className="underlined-heading">A Creations Farm Stay</h1>
             </ScrollAnimation>
