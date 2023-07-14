@@ -22,10 +22,10 @@ const Footer = () => {
 
         <div className="footer__col">
           <h4 className="footer__col-title">Social Media</h4>
-          <Link to="/whatsapp" className="footer__link">
+          <Link to="https://api.whatsapp.com/send?phone=9393031001" target="_blank" className="footer__link">
             Whatsapp
           </Link>
-          <Link to="/instagram" className="footer__link">
+          <Link to="https://www.instagram.com/a_creation_farm_stay/" target="_blank" className="footer__link">
             Instagram
           </Link>
         </div>

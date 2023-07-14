@@ -1,4 +1,5 @@
 import React from "react";
+// import pfp from "../assests/download.png";
 import "../styles/Testimonials.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -18,7 +19,7 @@ const Testimonials = () => {
             <ScrollAnimation>
               <div className="client__grid">
                 <div className="client__card">
-                  <img src="download.png" alt="client" />
+                  <img src="../assests/download.png" alt="client" />
                   <p>
                     What a place, what an experience. You need to visit it to
                     feel it. Have been there yesterday with cousins and it was
@@ -30,7 +31,7 @@ const Testimonials = () => {
                 </div>
                 <div className="client__card">
                   <img
-                    src="https://github.com/Shoeb891/jagermeister/blob/master/src/assests/header.png"
+                    src="../assests/download.png"
                     alt="client"
                   />
                   <p>
@@ -39,7 +40,7 @@ const Testimonials = () => {
                   </p>
                 </div>
                 <div className="client__card">
-                  <img src="https://pixabay.com/vectors/blank-profile-picture-mystery-man-973460/" />
+                  <img src="../assests/download.png" />
                   <p>
                     A true combination of luxury and comfort. This villa is so
                     well planned that it has every amenity you can think of for
@@ -49,7 +50,7 @@ const Testimonials = () => {
                   </p>
                 </div>
                 <div className="client__card">
-                  <img src="download.png" alt="client" />
+                  <img src="../assests/download.png" alt="client" />
                   <p>
                     Property and interior is just amazing and each and every
                     corner of the place has its own vibes. Definitely a perfect
@@ -57,7 +58,7 @@ const Testimonials = () => {
                   </p>
                 </div>
                 <div className="client__card">
-                  <img src="download.png" alt="client" />
+                  <img src="../assests/download.png" alt="client" />
                   <p>
                     This is by far the most beautiful and comfortable farm stay
                     I have been to. The ambiance is beautiful and its a perfect
@@ -67,7 +68,7 @@ const Testimonials = () => {
                   </p>
                 </div>
                 <div className="client__card">
-                  <img src="download.png" alt="client" />
+                  <img src="../assests/download.png" alt="client" />
                   <p>
                     his beautiful property had all the amenities with luxury…it
                     had all the comfort..pool for kids..kitchen..open

@@ -1,6 +1,5 @@
 .footer {
-  background-color: #eed1c3
-  ;
+  background-color: #f5e6e8;
   color: black;
   padding: 2rem;
   margin-top: 20px;
@@ -23,11 +22,12 @@
 .footer__col-title {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  color: #f5dfbb;
 }
 
 .footer__link {
   display: block;
-  color: black;
+  color: #241d44;
   margin: 0.5rem 0;
   font-size: 1rem;
   text-decoration: none;
@@ -86,3 +86,4 @@
 .whatsapp-icon img {
   width: 60px; /* Adjust this value to change the size of the icon */
 }
+

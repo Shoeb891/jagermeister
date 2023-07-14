@@ -278,7 +278,7 @@ body {
 }
 
 .company-info {
-  background-color: rgb(222, 234, 251, 0.5);
+  /* background-color: rgb(222, 234, 251, 0.5); */
   box-shadow: 0 4px 10px 0 #9e9ea7;
   border: 1px solid #ffffff;
   border-radius: 10px;
@@ -291,7 +291,7 @@ body {
 }
 
 .contact {
-  background-color: rgb(222, 234, 251, 0.5);
+  /* background-color: rgb(222, 234, 251, 0.5); */
   box-shadow: 0 4px 10px 0 #9e9ea7;
   border: 1px solid #ffffff;
   border-radius: 10px;
@@ -497,4 +497,8 @@ ol {
 
 .directions--a {
   text-decoration: none;
+}
+
+body{
+  background-color: #efe5dc;
 }
