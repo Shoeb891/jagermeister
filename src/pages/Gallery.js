@@ -6,6 +6,7 @@ import PropertySlider from "../components/PropertySlider";
 import "../styles/PropertySlider.css";
 import "../styles/Gallery.css";
 import Whatsapp from "../components/Whatsapp";
+import ScrollAnimation from "../components/ScrollAmination";
 
 const Gallery = () => {
   const interiorImages = [
@@ -62,65 +63,116 @@ const Gallery = () => {
     <>
       <Navbar />
       <Whatsapp />
-      <div className="gallery--container">
-        <h3 className="gallery--title">Explore Our Gallery</h3>
-        <p className="gallery--description">
-          Immerse yourself in the captivating beauty of our farm stay through
-          our carefully curated photo gallery. Each image captures the essence
-          of our serene surroundings, charming accommodations, and the authentic
-          farm experience we offer.
-        </p>
-        <div className="container--text">
-          <h3 className="container--title">Interior</h3>
-          <p className="container--description">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit diam
-            fringilla, taciti metus aenean nostra nisi tellus hac placerat.
-          </p>
+      <ScrollAnimation>
+        <div className="gallery--container">
+          <ScrollAnimation>
+            <h3 className="gallery--title">Explore Our Gallery</h3>
+          </ScrollAnimation>
+          <ScrollAnimation>
+            <p className="gallery--description">
+              Immerse yourself in the captivating beauty of our farm stay
+              through our carefully curated photo gallery. Each image captures
+              the essence of our serene surroundings, charming accommodations,
+              and the authentic farm experience we offer.
+            </p>
+          </ScrollAnimation>
+          <ScrollAnimation>
+            <div className="container--text">
+              <ScrollAnimation>
+                <h3 className="container--title">Interior</h3>
+              </ScrollAnimation>
+              <ScrollAnimation>
+                <p className="container--description">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit diam
+                  fringilla, taciti metus aenean nostra nisi tellus hac
+                  placerat.
+                </p>
+              </ScrollAnimation>
+            </div>
+          </ScrollAnimation>
+          <ScrollAnimation>
+            <div className="interiorImages-container">
+              <PropertySlider images={interiorImages} />
+            </div>
+          </ScrollAnimation>
+          <ScrollAnimation>
+            <div className="container--text">
+              <ScrollAnimation>
+                <h3 className="container--title">Bar Counter</h3>
+              </ScrollAnimation>
+              <ScrollAnimation>
+                <p className="container--description">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit diam
+                  fringilla, taciti metus aenean nostra nisi tellus hac
+                  placerat.
+                </p>
+              </ScrollAnimation>
+            </div>
+          </ScrollAnimation>
+          <ScrollAnimation>
+            <div className="barCounterImages-container">
+              <PropertySlider images={barCounterImages} />
+            </div>
+          </ScrollAnimation>
+          <ScrollAnimation>
+            <div className="container--text">
+              <ScrollAnimation>
+                <h3 className="container--title">Kitchen</h3>
+              </ScrollAnimation>
+              <ScrollAnimation>
+                <p className="container--description">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit diam
+                  fringilla, taciti metus aenean nostra nisi tellus hac
+                  placerat.
+                </p>
+              </ScrollAnimation>
+            </div>
+          </ScrollAnimation>
+          <ScrollAnimation>
+            <div className="kitchenImages-container">
+              <PropertySlider images={kitchenImages} />
+            </div>
+          </ScrollAnimation>
+          <ScrollAnimation>
+            <div className="container--text">
+              <ScrollAnimation>
+                <h3 className="container--title">Lawn</h3>
+              </ScrollAnimation>
+              <ScrollAnimation>
+                <p className="container--description">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit diam
+                  fringilla, taciti metus aenean nostra nisi tellus hac
+                  placerat.
+                </p>
+              </ScrollAnimation>
+            </div>
+          </ScrollAnimation>
+          <ScrollAnimation>
+            <div className="lawnImages-container">
+              <PropertySlider images={lawnImages} />
+            </div>
+          </ScrollAnimation>
+          <ScrollAnimation>
+            <div className="container--text">
+              <ScrollAnimation>
+                <h3 className="container--title">Pool</h3>
+              </ScrollAnimation>
+              <ScrollAnimation>
+                <p className="container--description">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit diam
+                  fringilla, taciti metus aenean nostra nisi tellus hac
+                  placerat.
+                </p>
+              </ScrollAnimation>
+            </div>
+          </ScrollAnimation>
+          <ScrollAnimation>
+            <div className="poolImages-container">
+              <PropertySlider images={poolImages} />
+            </div>
+          </ScrollAnimation>
         </div>
-        <div className="interiorImages-container">
-          <PropertySlider images={interiorImages} />
-        </div>
-        <div className="container--text">
-          <h3 className="container--title">Bar Counter</h3>
-          <p className="container--description">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit diam
-            fringilla, taciti metus aenean nostra nisi tellus hac placerat.
-          </p>
-        </div>
-        <div className="barCounterImages-container">
-          <PropertySlider images={barCounterImages} />
-        </div>
-        <div className="container--text">
-          <h3 className="container--title">Kitchen</h3>
-          <p className="container--description">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit diam
-            fringilla, taciti metus aenean nostra nisi tellus hac placerat.
-          </p>
-        </div>
-        <div className="kitchenImages-container">
-          <PropertySlider images={kitchenImages} />
-        </div>
-        <div className="container--text">
-          <h3 className="container--title">Lawn</h3>
-          <p className="container--description">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit diam
-            fringilla, taciti metus aenean nostra nisi tellus hac placerat.
-          </p>
-        </div>
-        <div className="lawnImages-container">
-          <PropertySlider images={lawnImages} />
-        </div>
-        <div className="container--text">
-          <h3 className="container--title">Pool</h3>
-          <p className="container--description">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit diam
-            fringilla, taciti metus aenean nostra nisi tellus hac placerat.
-          </p>
-        </div>
-        <div className="poolImages-container">
-          <PropertySlider images={poolImages} />
-        </div>
-      </div>
+      </ScrollAnimation>
       <Footer />
     </>
   );
