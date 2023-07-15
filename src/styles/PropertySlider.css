@@ -36,7 +36,6 @@
 
 .prev {
   left: 10px;
-  transform: scale(-1);
 }
 
 img {
@@ -83,7 +82,6 @@ img {
   .prev {
     right: auto;
     left: 10px;
-    transform: scale(-1) translateY(0);
   }
 
   .refresh {

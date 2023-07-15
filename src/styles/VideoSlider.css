@@ -1,15 +1,127 @@
 .video-slider-container {
-  overflow-x: auto;
-  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+  width: 337.5px;
+  z-index: 0;
+  margin: 0 auto;
 }
 
 .video-slide {
+  position: relative;
   display: inline-block;
-  vertical-align: top;
-  margin-right: 10px; /* Add spacing between slides if needed */
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 
-.video-slide video {
+.video-slide {
+  position: relative;
+  display: inline-block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  z-index: 0;
+}
+
+.video-slide video::-webkit-media-controls-timeline {
+  display: none; /* Hide the time bar */
+}
+
+.next,
+.prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  border-radius: 30px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  z-index: 2;
+  transition: background-color 0.2s ease;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev {
+  left: 10px;
+}
+
+.refresh {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.6;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  opacity: 1;
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  .video-slider-container {
+    height: 300px;
+  }
+
+  .next,
+  .prev,
+  .refresh {
+    top: auto;
+    bottom: 10px;
+    transform: translateY(0);
+  }
+
+  .next {
+    right: 10px;
+    left: auto;
+  }
+
+  .prev {
+    right: auto;
+    left: 10px;
+    transform: scale(-1) translateY(0);
+  }
+
+  .refresh {
+    top: 10px;
+    right: 10px;
+  }
 }

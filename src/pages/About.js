@@ -16,8 +16,18 @@ const About = () => {
   const playerRef = useRef(null);
 
   const handleClick = () => {
-    const player = playerRef.current.getInternalPlayer();
-    player.requestFullscreen();
+    const currentVideo = document.getElementById("video-slide");
+    if (currentVideo) {
+      if (currentVideo.requestFullscreen) {
+        currentVideo.requestFullscreen();
+      } else if (currentVideo.mozRequestFullScreen) {
+        currentVideo.mozRequestFullScreen();
+      } else if (currentVideo.webkitRequestFullscreen) {
+        currentVideo.webkitRequestFullscreen();
+      } else if (currentVideo.msRequestFullscreen) {
+        currentVideo.msRequestFullscreen();
+      }
+    }
   };
   const videos = [video1, video2, video3, video4, video5];
   return (
@@ -28,7 +38,7 @@ const About = () => {
         <ScrollAnimation>
           <div class="container---">
             <div className="player-wrapper" onClick={handleClick}>
-              <VideoSlider videos={videos} />
+              <VideoSlider videos={videos} playerRef={playerRef} />
             </div>
             <ScrollAnimation>
               <h1 className="underlined-heading">A Creations Farm Stay</h1>

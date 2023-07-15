@@ -337,6 +337,10 @@ body {
   transition: background-color 2s ease-out;
 }
 
+.player-wrapper {
+  display: flex;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   /* Navbar */
