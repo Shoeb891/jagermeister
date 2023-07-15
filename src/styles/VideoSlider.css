@@ -24,7 +24,7 @@
 }
 
 .video-slide video::-webkit-media-controls-timeline {
-  display: none; /* Hide the time bar */
+  display: none;
 }
 
 .next,
