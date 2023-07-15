@@ -43,7 +43,7 @@ const Testimonials = () => {
                 <div className="client__card">
                   <div className="user--info">
                   <FaUserAlt className="user--icon" />
-                  <h4 className="user--name">Rohit Khanderao</h4>
+                  <h4 className="user--name">Anshul Augnivansh</h4>
                   </div>
                   <p>
                   A lovely farm house for parties and events. The owner Gokul is very friendly and accommodating of some requests. It’s a newly renovated property with modern amenities, a nice swimming pool, a large bar counter, a garden space with swing and bonfire to name a few
