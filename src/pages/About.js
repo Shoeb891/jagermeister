@@ -13,22 +13,6 @@ import video4 from "../assests/video4.mp4";
 import video5 from "../assests/video5.mp4";
 
 const About = () => {
-  const playerRef = useRef(null);
-
-  const handleClick = () => {
-    const currentVideo = document.getElementById("video-slide");
-    if (currentVideo) {
-      if (currentVideo.requestFullscreen) {
-        currentVideo.requestFullscreen();
-      } else if (currentVideo.mozRequestFullScreen) {
-        currentVideo.mozRequestFullScreen();
-      } else if (currentVideo.webkitRequestFullscreen) {
-        currentVideo.webkitRequestFullscreen();
-      } else if (currentVideo.msRequestFullscreen) {
-        currentVideo.msRequestFullscreen();
-      }
-    }
-  };
   const videos = [video1, video2, video3, video4, video5];
   return (
     <>
@@ -37,8 +21,8 @@ const About = () => {
       <ScrollAnimation>
         <ScrollAnimation>
           <div class="container---">
-            <div className="player-wrapper" onClick={handleClick}>
-              <VideoSlider videos={videos} playerRef={playerRef} />
+            <div className="player-wrapper">
+              <VideoSlider videos={videos} />
             </div>
             <ScrollAnimation>
               <h1 className="underlined-heading">A Creations Farm Stay</h1>

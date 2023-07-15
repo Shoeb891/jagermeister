@@ -44,28 +44,38 @@ const VideoSlider = ({ videos }) => {
       paginate(1);
     }, 10000); // 10 secs
 
-    return () => clearInterval(autoplay);
-  }, [page]);
+    const handleFullscreen = () => {
+      const videoElement = videoRef.current;
 
-  const handleFullscreen = () => {
-    const videoElement = videoRef.current;
-
-    if (videoElement) {
-      if (videoElement.requestFullscreen) {
-        videoElement.requestFullscreen();
-      } else if (videoElement.mozRequestFullScreen) {
-        videoElement.mozRequestFullScreen();
-      } else if (videoElement.webkitRequestFullscreen) {
-        videoElement.webkitRequestFullscreen();
-      } else if (videoElement.msRequestFullscreen) {
-        videoElement.msRequestFullscreen();
+      if (videoElement) {
+        if (videoElement.requestFullscreen) {
+          videoElement.requestFullscreen();
+        } else if (videoElement.mozRequestFullScreen) {
+          videoElement.mozRequestFullScreen();
+        } else if (videoElement.webkitRequestFullscreen) {
+          videoElement.webkitRequestFullscreen();
+        } else if (videoElement.msRequestFullscreen) {
+          videoElement.msRequestFullscreen();
+        }
       }
+    };
+
+    const videoPlayer = videoRef.current;
+    if (videoPlayer) {
+      videoPlayer.addEventListener("click", handleFullscreen);
     }
-  };
+
+    return () => {
+      clearInterval(autoplay);
+      if (videoPlayer) {
+        videoPlayer.removeEventListener("click", handleFullscreen);
+      }
+    };
+  }, [page]);
 
   return (
     <div className="video-slider-container">
-      <div className="fullscreen" onClick={handleFullscreen}>
+      <div className="fullscreen">
         <AnimatePresence initial={false} custom={direction}>
           <div className="video-container">
             <motion.video
