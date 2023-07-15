@@ -42,7 +42,7 @@ const VideoSlider = ({ videos }) => {
   useEffect(() => {
     const autoplay = setInterval(() => {
       paginate(1);
-    }, 5000);
+    }, 10000); // 10 secs
 
     return () => clearInterval(autoplay);
   }, [page]);
@@ -65,60 +65,59 @@ const VideoSlider = ({ videos }) => {
 
   return (
     <div className="video-slider-container">
-      <AnimatePresence initial={false} custom={direction}>
-        <div className="video-container">
-          <motion.video
-            ref={videoRef}
-            className="video-slide"
-            key={page}
-            src={videos[videoIndex]}
-            custom={direction}
-            variants={variants}
-            initial="enter"
-            animate="center"
-            exit="exit"
-            transition={{
-              opacity: { duration: 0.5 },
-              scale: { duration: 0.5 },
-            }}
-            drag="x"
-            dragConstraints={{ left: 0, right: 0 }}
-            dragElastic={1}
-            onDragEnd={(e, { offset, velocity }) => {
-              const swipe = swipePower(offset.x, velocity.x);
-
-              if (swipe < -swipeConfidenceThreshold) {
-                paginate(1);
-              } else if (swipe > swipeConfidenceThreshold) {
-                paginate(-1);
-              }
-            }}
-            loop
-            muted
-            autoPlay
-          />
-        </div>
-      </AnimatePresence>
-      <div className="next" onClick={() => paginate(1)}>
-        ›
-      </div>
-      <div className="prev" onClick={() => paginate(-1)}>
-        ‹
-      </div>
-      <div className="refresh" onClick={() => setPage([page, -direction])}>
-        ⟳
-      </div>
-      <div className="dots">
-        {videos.map((_, index) => (
-          <div
-            key={index}
-            className={`dot ${index === videoIndex ? "active" : ""}`}
-            onClick={() => setPage([index, index > page ? 1 : -1])}
-          />
-        ))}
-      </div>
       <div className="fullscreen" onClick={handleFullscreen}>
-        Fullscreen
+        <AnimatePresence initial={false} custom={direction}>
+          <div className="video-container">
+            <motion.video
+              ref={videoRef}
+              className="video-slide"
+              key={page}
+              src={videos[videoIndex]}
+              custom={direction}
+              variants={variants}
+              initial="enter"
+              animate="center"
+              exit="exit"
+              transition={{
+                opacity: { duration: 0.5 },
+                scale: { duration: 0.5 },
+              }}
+              drag="x"
+              dragConstraints={{ left: 0, right: 0 }}
+              dragElastic={1}
+              onDragEnd={(e, { offset, velocity }) => {
+                const swipe = swipePower(offset.x, velocity.x);
+
+                if (swipe < -swipeConfidenceThreshold) {
+                  paginate(1);
+                } else if (swipe > swipeConfidenceThreshold) {
+                  paginate(-1);
+                }
+              }}
+              loop
+              muted
+              autoPlay
+            />
+          </div>
+        </AnimatePresence>
+        <div className="next" onClick={() => paginate(1)}>
+          ›
+        </div>
+        <div className="prev" onClick={() => paginate(-1)}>
+          ‹
+        </div>
+        <div className="refresh" onClick={() => setPage([page, -direction])}>
+          ⟳
+        </div>
+        <div className="dots">
+          {videos.map((_, index) => (
+            <div
+              key={index}
+              className={`dot ${index === videoIndex ? "active" : ""}`}
+              onClick={() => setPage([index, index > page ? 1 : -1])}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

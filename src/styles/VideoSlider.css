@@ -98,14 +98,33 @@
 /* Mobile styles */
 @media (max-width: 767px) {
   .video-slider-container {
-    height: 300px;
+    height: 500px;
+    object-fit: contain;
   }
 
   .next,
-  .prev,
+  .prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    z-index: 2;
+    transition: background-color 0.2s ease;
+  }
+
   .refresh {
     top: auto;
-    bottom: 10px;
+    bottom: auto;
     transform: translateY(0);
   }
 
@@ -117,7 +136,6 @@
   .prev {
     right: auto;
     left: 10px;
-    transform: scale(-1) translateY(0);
   }
 
   .refresh {

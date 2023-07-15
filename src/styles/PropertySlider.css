@@ -6,10 +6,14 @@
   justify-content: center;
   align-items: center;
   margin: 10px auto;
+  box-shadow: 0 4px 12px rgba(213, 198, 224, 0.8);
+  overflow: hidden;
 }
 
 .property--img {
   object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .next,
@@ -38,13 +42,6 @@
   left: 10px;
 }
 
-img {
-  position: absolute;
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover;
-}
-
 .refresh {
   padding: 10px;
   position: absolute;
@@ -58,6 +55,27 @@ img {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+.dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #d5c6e0;
 }
 
 /* Mobile styles */
