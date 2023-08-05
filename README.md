@@ -1,7 +1,8 @@
 # FarmHouse Template
-A farmhouse template built with HTML, CSS, ReactJS 
+A farmhouse template built with HTML, CSS, ReactJS
 
-(a-creationfarmstay.vercel.app/home)
+[a-creationfarmstay.vercel.app/home](a-creationfarmstay.vercel.app/home)
+
 
 ### `npm start`
 
